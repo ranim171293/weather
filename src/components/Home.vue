@@ -3,11 +3,11 @@
     overflow-x: hidden;
 }
 .main-container{
-    border:1px solid #000;
-    padding:10px;
+    border-top:1px solid #3385b7;
+    padding:20px;
 }
 .card_one{
-    border: 1px solid #000;
+    border: 1px solid #3385b7;
     margin:auto;
     height:50px;
 }
@@ -32,11 +32,8 @@
                   <div class="city">{{country.city}}</div>
                   <div class="temp">{{country.temp}}</div>
               </div>
-              
           </div>
       </div>
-
-    
   </div>
 </template>
 
