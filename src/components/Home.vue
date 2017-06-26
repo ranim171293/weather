@@ -18,6 +18,7 @@
     text-align: center;
     font-weight: 800;
     font-size: 25px;
+    cursor: pointer;
 }
 </style>
 <template>
@@ -26,7 +27,7 @@
           <div class="row weather-row">
               <div v-if="!(countries.length ==3)" class="col-md-3 card_one">
                   <!--<span><a href="#" class="/add-weather"> +</a></span>-->
-                  <span class="add-weather" v-on:click="addWeather()">+</span>
+                  <span class="add-weather" v-on:click="addWeather">+</span>
               </div>
               <div class="col-md-3 card_one" v-for="country in countries">
                   <div class="city">{{country.city}}</div>
@@ -54,7 +55,7 @@ export default {
   },
   methods: {
     addWeather: function () {
-      console.log('i m clicked')
+      window.location.href = '/#/addweather'
     }
   }
 }
